@@ -6,15 +6,15 @@ Registration
 
 Update
 
-`$ curl http://localhost:8080/api/whiskies/1 -v -X PUT -H "Content-Type:application/json" -d "{\"name\":\"JohnnieWalerRed\", \"price\":1500}"`
+`$ curl http://localhost:8080/api/whisky/1 -v -X PUT -H "Content-Type:application/json" -d "{\"name\":\"JohnnieWalerRed\", \"price\":1500}"`
 
 Delete
 
-`$ curl http://localhost:8080/api/whiskies/1 -v -X DELETE`
+`$ curl http://localhost:8080/api/whisky/1 -v -X DELETE`
 
 Reference (all cases)
 
-`http://localhost:8080/api/whiskies`
+`http://localhost:8080/api/whisky`
 
 Referring to (a)
 
