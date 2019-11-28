@@ -8,6 +8,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by hendisantika on 6/26/17.
@@ -43,7 +44,7 @@ public class WhiskyController {
     }
 
     @RequestMapping(value = "{id}", method = RequestMethod.GET)
-    Whisky getWhisky(@PathVariable("id") Long id) {
+    Optional<Whisky> getWhisky(@PathVariable("id") Long id) {
         return whiskyService.find(id);
     }
 }
