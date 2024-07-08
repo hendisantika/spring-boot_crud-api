@@ -4,8 +4,8 @@ import com.example.demo.entity.Whisky;
 import com.example.demo.repository.WhiskyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,7 +16,7 @@ import java.util.Optional;
 @Transactional
 public class WhiskyService {
     @Autowired
-    WhiskyRepository whiskyRepository;
+    private WhiskyRepository whiskyRepository;
 
     public List<Whisky> findAll() {
 //        return whiskyRepository.findAll(new Sort(Sort.Direction.ASC, "id"));
